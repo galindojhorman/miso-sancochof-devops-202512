@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - echo Ejecutando pruebas...
-      - pytest --cov-fail-under=71 --cov=. -s --verbose tests/
+      - pytest --cov-fail-under=95 --cov=. -s --verbose tests/
       - echo Empaquetando artefacto...
       - zip -r build-output.zip .
   post_build:
